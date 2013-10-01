@@ -26,7 +26,7 @@ On CentOS:
 
 
 ####Download and Install the Cloudera Manager API Client
-Download the CM API Client on any machine that allows you to make HTTP calls to Cloudera Manager:
+Download the CM API Client on any machine that allows you to make HTTP calls to Cloudera Manager (the script can run remotely from the cluster):
 
     # wget https://github.com/cloudera/cm_api/tarball/master
     # tar -xvf master
