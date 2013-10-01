@@ -12,9 +12,9 @@ For more information see: [Cloudera Manager](http://www.cloudera.com/content/clo
 
 
 ####Requirements
-- Cloudera Manager 4.5 or higher (I'm guessing about that; I tested with CM 4.7.1) must be available on the network over http
+- Cloudera Manager 4.5 or higher (I'm guessing about that; I tested with CM 4.7.1)
 - CM login with Administrator privileges
-- Python miust be installed on the machine where you run the script (I ran it from my MacBook)
+- Python must be installed
 - Python setuptools (see below)
 - CM API must be installed (see below)
 
