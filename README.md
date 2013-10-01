@@ -53,7 +53,7 @@ Edit the file getPorts.py.  Set the following:
 
     # getPorts.py
 
-The output might look something like this (note that non-default parts are flagged):
+The output might look something like this (note that non-default ports are flagged):
 
     # [root@brooklyn ~]# ./getPorts.py
 
