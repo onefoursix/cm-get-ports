@@ -57,48 +57,48 @@ The output might look something like this:
 
     # [root@brooklyn ~]# ./getPorts.py
 
-Connecting to Cloudera Manager at : http://brooklyn.onefoursix.com:7180
+    Connecting to Cloudera Manager at : http://brooklyn.onefoursix.com:7180
 
-FLUME Service (flume1)
-*****************************
-AGENT               agent.http.port                                        brooklyn.onefoursix.com:41414           
-AGENT               agent.http.port                                        brooklyn0.onefoursix.com:41414          
-AGENT               agent.http.port                                        brooklyn1.onefoursix.com:41414          
+    FLUME Service (flume1)
+    *****************************
+    AGENT               agent.http.port                                        brooklyn.onefoursix.com:41414           
+    AGENT               agent.http.port                                        brooklyn0.onefoursix.com:41414          
+    AGENT               agent.http.port                                        brooklyn1.onefoursix.com:41414          
 
-ZOOKEEPER Service (zookeeper1)
-*****************************
-SERVER              server.jmx.agent.port                                  brooklyn.onefoursix.com:9010            
-SERVER              server.jmx.agent.port                                  brooklyn0.onefoursix.com:9010           
-SERVER              server.jmx.agent.port                                  brooklyn1.onefoursix.com:9010           
+    ZOOKEEPER Service (zookeeper1)
+    *****************************
+    SERVER              server.jmx.agent.port                                  brooklyn.onefoursix.com:9010            
+    SERVER              server.jmx.agent.port                                  brooklyn0.onefoursix.com:9010           
+    SERVER              server.jmx.agent.port                                  brooklyn1.onefoursix.com:9010           
 
-HDFS Service (hdfs1)
-*****************************
-DATANODE            dfs.datanode.http.port                                 brooklyn.onefoursix.com:1006            (custom port)
-DATANODE            dfs.datanode.http.port                                 brooklyn0.onefoursix.com:1006           (custom port)
-DATANODE            dfs.datanode.http.port                                 brooklyn1.onefoursix.com:1006           (custom port)
-DATANODE            dfs.datanode.https.port                                brooklyn.onefoursix.com:50475           
-DATANODE            dfs.datanode.https.port                                brooklyn0.onefoursix.com:50475          
-DATANODE            dfs.datanode.https.port                                brooklyn1.onefoursix.com:50475          
-DATANODE            dfs.datanode.ipc.port                                  brooklyn.onefoursix.com:50020           
-DATANODE            dfs.datanode.ipc.port                                  brooklyn0.onefoursix.com:50020          
-DATANODE            dfs.datanode.ipc.port                                  brooklyn1.onefoursix.com:50020          
-DATANODE            dfs.datanode.port                                      brooklyn.onefoursix.com:1004            (custom port)
-DATANODE            dfs.datanode.port                                      brooklyn0.onefoursix.com:1004           (custom port)
-DATANODE            dfs.datanode.port                                      brooklyn1.onefoursix.com:1004           (custom port)
-HTTPFS              hdfs.httpfs.admin.port                                 brooklyn.onefoursix.com:14001           
-HTTPFS              hdfs.httpfs.http.port                                  brooklyn.onefoursix.com:14000           
-JOURNALNODE         dfs.journalnode.http.port                              brooklyn.onefoursix.com:8480            
-JOURNALNODE         dfs.journalnode.http.port                              brooklyn0.onefoursix.com:8480           
-JOURNALNODE         dfs.journalnode.http.port                              brooklyn1.onefoursix.com:8480           
-JOURNALNODE         dfs.journalnode.rpc.port                               brooklyn.onefoursix.com:8485            
-JOURNALNODE         dfs.journalnode.rpc.port                               brooklyn0.onefoursix.com:8485           
-JOURNALNODE         dfs.journalnode.rpc.port                               brooklyn1.onefoursix.com:8485           
-NAMENODE            dfs.http.port                                          brooklyn0.onefoursix.com:50070          
-NAMENODE            dfs.http.port                                          brooklyn1.onefoursix.com:50070          
-NAMENODE            dfs.https.port                                         brooklyn0.onefoursix.com:50470          
-NAMENODE            dfs.https.port                                         brooklyn1.onefoursix.com:50470          
-NAMENODE            namenode.port                                          brooklyn0.onefoursix.com:8020           
-NAMENODE            namenode.port                                          brooklyn1.onefoursix.com:8020           
+    HDFS Service (hdfs1)
+    *****************************
+    DATANODE            dfs.datanode.http.port                                 brooklyn.onefoursix.com:1006            (custom port)
+    DATANODE            dfs.datanode.http.port                                 brooklyn0.onefoursix.com:1006           (custom port)
+    DATANODE            dfs.datanode.http.port                                 brooklyn1.onefoursix.com:1006           (custom port)
+    DATANODE            dfs.datanode.https.port                                brooklyn.onefoursix.com:50475           
+    DATANODE            dfs.datanode.https.port                                brooklyn0.onefoursix.com:50475          
+    DATANODE            dfs.datanode.https.port                                brooklyn1.onefoursix.com:50475          
+    DATANODE            dfs.datanode.ipc.port                                  brooklyn.onefoursix.com:50020           
+    DATANODE            dfs.datanode.ipc.port                                  brooklyn0.onefoursix.com:50020          
+    DATANODE            dfs.datanode.ipc.port                                  brooklyn1.onefoursix.com:50020          
+    DATANODE            dfs.datanode.port                                      brooklyn.onefoursix.com:1004            (custom port)
+    DATANODE            dfs.datanode.port                                      brooklyn0.onefoursix.com:1004           (custom port)
+    DATANODE            dfs.datanode.port                                      brooklyn1.onefoursix.com:1004           (custom port)
+    HTTPFS              hdfs.httpfs.admin.port                                 brooklyn.onefoursix.com:14001           
+    HTTPFS              hdfs.httpfs.http.port                                  brooklyn.onefoursix.com:14000           
+    JOURNALNODE         dfs.journalnode.http.port                              brooklyn.onefoursix.com:8480            
+    JOURNALNODE         dfs.journalnode.http.port                              brooklyn0.onefoursix.com:8480           
+    JOURNALNODE         dfs.journalnode.http.port                              brooklyn1.onefoursix.com:8480           
+    JOURNALNODE         dfs.journalnode.rpc.port                               brooklyn.onefoursix.com:8485            
+    JOURNALNODE         dfs.journalnode.rpc.port                               brooklyn0.onefoursix.com:8485           
+    JOURNALNODE         dfs.journalnode.rpc.port                               brooklyn1.onefoursix.com:8485           
+    NAMENODE            dfs.http.port                                          brooklyn0.onefoursix.com:50070          
+    NAMENODE            dfs.http.port                                          brooklyn1.onefoursix.com:50070          
+    NAMENODE            dfs.https.port                                         brooklyn0.onefoursix.com:50470          
+    NAMENODE            dfs.https.port                                         brooklyn1.onefoursix.com:50470          
+    NAMENODE            namenode.port                                          brooklyn0.onefoursix.com:8020           
+    NAMENODE            namenode.port                                          brooklyn1.onefoursix.com:8020           
 
 HBASE Service (hbase1)
 *****************************
