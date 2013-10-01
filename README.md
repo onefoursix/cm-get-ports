@@ -7,9 +7,8 @@ A Python script that retrieves Service Port info from Cloudera Manager
 
 
 ####Requirements
-- Cloudera Manager 4.1 or higher (I tested with CM 4.5.2) with a configured HDFS Service. 
+- Cloudera Manager 4.5 or higher (just guessing about that) (I tested with CM 4.7.2) 
 - CM login with Administrator privileges
-- CDH 4.1 or higher (I tested with CDH 4.2.1)
 - Python (I tested on CentOS 6.4 which includes Python 2.6.6)
 - Python setuptools (see below)
 - CM API must be installed (see below)
