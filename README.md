@@ -1,8 +1,7 @@
 cm-get-ports
 ==================
 
-A Python script that retrieves Service Port info from Cloudera Manager
-
+A Python script that retrieves Service URL info from Cloudera Manager
 
 
 
