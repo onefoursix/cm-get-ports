@@ -3,7 +3,7 @@ cm-get-ports
 
 A Python script that retrieves Service URL info from Cloudera Manager.
 
-For more information More information:   [Cloudera Manager](http://www.cloudera.com/content/cloudera/en/products/cloudera-manager.html), [CM API Client](http://cloudera.github.io/cm_api/)
+For more information see: [Cloudera Manager](http://www.cloudera.com/content/cloudera/en/products/cloudera-manager.html), [CM API Client](http://cloudera.github.io/cm_api/)
 
 
 
