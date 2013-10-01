@@ -3,6 +3,8 @@ cm-get-ports
 
 A Python script that retrieves Service URL info from Cloudera Manager.
 
+A bit of a hack -- it simply walks through all services, and for all service roles, prints a line for each configuration property that has "port" in its proerty name.
+
 For more information see: [Cloudera Manager](http://www.cloudera.com/content/cloudera/en/products/cloudera-manager.html), [CM API Client](http://cloudera.github.io/cm_api/)
 
 
@@ -35,4 +37,24 @@ Change to the cm-api's python directory and install the CM-API module (see the R
 
     # cd cloudera-cm_api-8dea57a/python
     # python setup.py install
+
+
+####Set Cloudera Manager Connection Settings
+
+Edit the file getPorts.py.  Set the following:
+- cm_host
+- cm_port
+- cm_login
+- cm_password
+- cluster_name
+
+
+####Run the script
+
+    # getPorts.py
+
+The output 
+
+
+
 
