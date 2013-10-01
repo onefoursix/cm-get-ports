@@ -51,7 +51,7 @@ Edit the file getPorts.py.  Set the following:
 
 ####Run the script
 
-    # getPorts.py
+    # ./getPorts.py
 
 The output might look something like this (note that non-default ports are flagged):
 
