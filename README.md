@@ -3,7 +3,7 @@ cm-get-ports
 
 A Python script that retrieves Service URL info from Cloudera Manager.
 
-A bit of a hack -- it simply walks through all services, and for all service roles, prints a line for each configuration property that has "port" in its proerty name.
+A bit of a hack; the script simply walks through all service roles and prints a line for each configuration property that has the string "port" in its property name.
 
 For more information see: [Cloudera Manager](http://www.cloudera.com/content/cloudera/en/products/cloudera-manager.html), [CM API Client](http://cloudera.github.io/cm_api/)
 
