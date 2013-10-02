@@ -21,7 +21,7 @@ from cm_api.api_client import ApiResource
 ##  ** CM Connection Settings ******************************
 
 ## Cloudera Manager Host and Port
-cm_host = "brooklyn.onefoursix.com"
+cm_host = "localhost"
 cm_port = "7180"
 
 ## Cloudera Manager login
