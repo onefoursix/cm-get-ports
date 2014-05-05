@@ -3,7 +3,7 @@
 ## ********************************************************************************
 ## getPorts.py 
 ## 
-## Example of how to retrieve Service ports using the Cloudera Manager API
+## Example of how to retrieve Service ports using cm-api v6 for CM v5.0
 ##
 ## Usage: getPorts.py 
 ## 
@@ -31,11 +31,19 @@ cm_login = "admin"
 cm_password = "admin"
 
 ## Cluster Name
-cluster_name = "Cluster 1 - CDH4"
+cluster_name = "Cluster 1"
 
 
 
 ## ** function defs ***************************
+
+def getHostNameForHostId(api, hostId):
+
+  for host in api.get_all_hosts():
+    if host.hostId == hostId:
+      return host.hostname
+  return "hostname not found for hostId: " + hostId
+
 
 def getRoleURLs(role):
   
@@ -52,8 +60,9 @@ def getRoleURLs(role):
       else:
         custom_port = True
 
-      host = role.hostRef.hostId
-      url = host + ":" + port
+      hostname = getHostNameForHostId(api, role.hostRef.hostId)
+
+      url = hostname + ":" + port
       property_name = property_name.replace('_', '.')
       item = role.type.ljust(20) + property_name.ljust(55) + url.ljust(40)
       if custom_port:
@@ -62,13 +71,11 @@ def getRoleURLs(role):
   return list   
 
 
-
 ## ** Connect to CM ***************************
 
 print ""
 print "Connecting to Cloudera Manager at : http://" + cm_host + ":" + cm_port
 print ""
-
 api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password)
 cluster = api.get_cluster(cluster_name)
 
