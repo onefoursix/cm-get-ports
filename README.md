@@ -12,7 +12,7 @@ For more information see: [Cloudera Manager](http://www.cloudera.com/content/clo
 
 
 ####Requirements
-- Cloudera Manager 4.5 or higher (I'm guessing about that; I tested with CM 4.7.1)
+- Cloudera Manager 4.5 or higher (most recently tested in CM5.0)
 - CM login with Administrator privileges
 - Python must be installed
 - Python setuptools (see below)
