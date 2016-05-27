@@ -33,6 +33,11 @@ cm_password = "admin"
 ## Cluster Name
 cluster_name = "Cluster 1"
 
+## CM API Version 
+## See the chart here to get the right value: http://cloudera.github.io/cm_api/docs/releases/
+## I'll default to v10 of the API for Cloudera Manager 5.4
+cm_api_version = "10"
+
 
 
 ## ** function defs ***************************
@@ -76,7 +81,7 @@ def getRoleURLs(role):
 print ""
 print "Connecting to Cloudera Manager at : http://" + cm_host + ":" + cm_port
 print ""
-api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password)
+api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password, version=cm_api_version)
 cluster = api.get_cluster(cluster_name)
 
 
