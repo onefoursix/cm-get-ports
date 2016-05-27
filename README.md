@@ -19,24 +19,9 @@ For more information see: [Cloudera Manager](http://www.cloudera.com/content/clo
 - CM API must be installed (see below)
 
 
-####Install Python setuptools
-On CentOS:
+####Install the Cloudera Manager API 
+Follow the steps [here](https://cloudera.github.io/cm_api/docs/python-client/) to install the Cloudera Manager API Python client on the machine where you will run these scripts
 
-    # yum -y install python-setuptools
-
-
-####Download and Install the Cloudera Manager API Client
-Download and untar the CM API Client:
-
-    # wget https://github.com/cloudera/cm_api/tarball/master
-    # tar -xvf master
-
-This will give you a dir named something like <code>cloudera-cm_api-8dea57a<code>
-
-Change to the cm-api's python directory and install the CM-API module (see the README and SHELL_README for additional details):
-
-    # cd cloudera-cm_api-8dea57a/python
-    # python setup.py install
 
 
 ####Set Cloudera Manager Connection Settings
@@ -47,6 +32,7 @@ Edit the file getPorts.py.  Set the following:
 - cm_login
 - cm_password
 - cluster_name
+- cm_api_version -- You can find the correct version number in the chart [here](http://cloudera.github.io/cm_api/docs/releases/)
 
 
 ####Run the script
